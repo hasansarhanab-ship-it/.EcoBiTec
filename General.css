@@ -149,7 +149,7 @@ main, aside {
 /* ======== MAIN ======== */
 main {
     flex: 2;
-    background-color: #f4e3bf;
+    background-color: #a6f3a2;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -164,7 +164,7 @@ main {
 /* ======== ASIDE ======== */
 aside {
     flex: 1;
-    background-color: #eef6c7;
+    background-color: #b0f2b5;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
