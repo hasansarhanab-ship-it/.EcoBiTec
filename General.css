@@ -149,26 +149,34 @@ main, aside {
 /* ======== MAIN ======== */
 main {
     flex: 2;
-    background-color: #ffffff;
+    background-color: #f4e3bf;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
 
+.servicio img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Rellena el espacio de 200x200 recortando lo que sobre, pero sin distorsionar */
+    border-radius: 8px; /* Opcional: queda bien para suavizar las esquinas */
+}
 /* ======== ASIDE ======== */
 aside {
     flex: 1;
-    background-color: #ffffff;
+    background-color: #eef6c7;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     height: fit-content;
 }
+
+
 /* --- Estilos del Footer --- */
 
 /* El contenedor principal del footer */
 .footer-principal {
-    background-color: #eee; /* Color de fondo gris claro */
+    background-color: #f9decc; /* Color de fondo gris claro */
     color: #333;               /* Color de texto principal (gris oscuro) */
     padding: 40px 20px;         /* Espaciado interno */
 }
