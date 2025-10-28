@@ -1,0 +1,198 @@
+/* --- Estilo general --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* --- Contenedor principal --- */
+.Contenedor {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* --- Encabezado / Header --- */
+header {
+    display: flex;               /* flex para alinear elementos */
+    align-items: center;         /* centra verticalmente */
+    justify-content: center;     /* centra el título */
+    background-color: #cfe8cf;
+    padding: 20px;
+    position: relative;          /* permite posicionar logo y botones */
+}
+
+/* --- Imagen del logo a la izquierda --- */
+header img:first-of-type {
+    width: 100px;
+    position: absolute;          /* la sacamos del flujo normal */
+    left: 20px;                  /* pegada a la izquierda */
+    height: auto;                /* mantiene proporción */
+    transition: transform 0.5s ease; /* movimiento suave */
+}
+
+/* --- Movimiento del logo al pasar el ratón --- */
+header img:first-of-type:hover {
+    transform: translateX(-20px);
+}
+
+/* --- Título centrado y grande --- */
+header h1 {
+    font-size: 3em;              /* tamaño grande */
+    margin: 0;
+    text-align: center;           /* centra el título */
+    transition: color 0.3s ease;  /* efecto hover */
+}
+
+/* --- Efecto hover del título --- */
+header h1:hover {
+    color: #2d7a2d;
+}
+
+header .Login {
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    right: 300px;
+}
+
+header .Buscar {
+    display: flex;
+    gap: 60px;
+    position: relative;
+    top: -20px;
+    right: 150px;
+}
+
+header .Carrito {
+    display: flex;
+    gap: 60px;
+    position: relative;
+    top: -20px;
+    right: 120px;
+}
+
+header .Carrito img {
+    width: 200px;
+    height: auto;
+}
+/* --- Contenedor de botones a la derecha --- */
+header .Botones {
+    display: flex;
+    gap: 50px;                   /* espacio entre botones */
+    position: absolute;
+    right: 20px;                 /* pegado a la derecha */
+}
+
+/* --- Imágenes de los botones --- */
+header .Botones img {
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* --- Efecto hover para los botones --- */
+header .Botones img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* --- Navegación --- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #7bc47f;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* --- Efecto hover en menú --- */
+nav a:hover {
+    background-color: #5fa566;
+    border-radius: 8px;
+    transform: scale(1.05);
+}
+
+/* --- Efectos generales --- */
+main, aside {
+    margin-top: 20px;
+}
+
+/* --- Estilos del Footer --- */
+
+/* El contenedor principal del footer */
+.footer-principal {
+    background-color: #eee; /* Color de fondo gris claro */
+    color: #333;               /* Color de texto principal (gris oscuro) */
+    padding: 40px 20px;         /* Espaciado interno */
+}
+
+/* El contenedor que alinea las columnas */
+.footer-container {
+    display: flex;                /* ¡La clave! Usa Flexbox para las columnas */
+    flex-wrap: wrap;              /* Permite que se apilen en móviles */
+    justify-content: space-between; /* Distribuye las columnas */
+    max-width: 1200px;            /* Ancho máximo del contenido */
+    margin: 0 auto;               /* Centra el contenedor */
+}
+
+/* * ¡ESTE ES EL CAMBIO PRINCIPAL! 
+ * Agrupamos todas tus clases de columna (.Contacto, .Políticas, etc.)
+ * para darles el mismo estilo base.
+ * (IMPORTANTE: La tilde en .Políticas debe estar en tu CSS)
+*/
+.Contacto, 
+.Políticas, 
+.Empresa, 
+.Idioma {
+    flex: 1;                /* Cada columna intenta ocupar el mismo espacio */
+    min-width: 220px;       /* Ancho mínimo antes de apilarse */
+    margin: 20px;           /* Espacio entre las columnas */
+}
+
+/* * Estilo para TODOS los h2 dentro del contenedor.
+ * Esto aplica a "Contacto", "Políticas", "Sobre la Empresa" e "Idioma".
+*/
+.footer-container h2 {
+    font-size: 1.1em;
+    color: #000;            /* Color negro para los títulos */
+    margin-bottom: 15px;
+}
+
+/* Estilo para TODOS los párrafos dentro del contenedor */
+.footer-container p {
+    font-size: 0.9em;
+    margin-bottom: 10px; /* Espacio entre líneas */
+}
+
+/* Estilo para los labels de contacto (Gmail:, Teléfono:, etc.) */
+.footer-container strong {
+    color: #000; /* Color negro para el label en negrita */
+}
+
+/* * Estilo para TODOS los enlaces (<a>) dentro del contenedor.
+ * Esto quita el subrayado de los enlaces de contacto.
+ * Si conviertes los idiomas en enlaces, también les quitará el subrayado.
+*/
+.footer-container a {
+    text-decoration: none;  /* Quita el subrayado de los enlaces */
+    color: #333;            /* Mismo color que el texto normal */
+}
+
+/* Efecto al pasar el ratón sobre CUALQUIER enlace del footer */
+.footer-container a:hover {
+    text-decoration: underline; /* Muestra el subrayado al pasar el ratón */
+}
