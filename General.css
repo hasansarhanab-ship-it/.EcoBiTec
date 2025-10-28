@@ -130,7 +130,40 @@ nav a:hover {
 main, aside {
     margin-top: 20px;
 }
+/* ======== CONTENEDOR QUE UNE MAIN + ASIDE ======== */
+.Contenedor {
+    display: flex;
+    flex-direction: column;
+}
 
+/* Crea un bloque con el main y el aside uno al lado del otro */
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: #f9f9f9;
+}
+
+/* ======== MAIN ======== */
+main {
+    flex: 2;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* ======== ASIDE ======== */
+aside {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    height: fit-content;
+}
 /* --- Estilos del Footer --- */
 
 /* El contenedor principal del footer */
