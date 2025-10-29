@@ -131,6 +131,84 @@ main, aside {
     margin-top: 20px;
 }
 
+/*Inicio*/
+
+/* ======== CONTENEDOR QUE UNE MAIN + ASIDE ======== */
+.Contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Crea un bloque con el main y el aside uno al lado del otro */
+/* Crea un bloque con el main y el aside uno al lado del otro */
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    /* CAMBIO AQUÍ: 'flex-start' por 'stretch' */
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: #f9f9f9;
+}
+
+/* ======== MAIN ======== */
+main {
+    flex: 2;
+    background-color: #d7f7c1;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* 1. Convierte .servicio en un contenedor flexible */
+.servicio {
+    display: flex;
+    align-items: center; /* Alinea el texto y la imagen verticalmente (centrados) */
+    gap: 20px;           /* Añade un espacio entre el texto y la imagen */
+    margin-bottom: 40px; /* Separa esta oferta de la siguiente */
+}
+
+/* 2. Haz que el texto y la imagen compartan el espacio */
+.servicio div { /* El 'div' que contiene tu texto */
+    flex: 2; /* Le dice al texto que ocupe el espacio disponible (ej. 50%) */
+}
+
+.servicio img {
+    flex: 1;         /* Le dice a la imagen que ocupe el espacio disponible (ej. 50%) */
+    width: 100%;     /* Ocupa el 100% del espacio que le da 'flex: 1' */
+    max-width: 350px; /* Un tope para que no se haga gigante en pantallas grandes */
+    height: auto;
+}
+
+/* ======== ASIDE ======== */
+aside {
+    flex: 1;
+    background-color: #ece8a6;
+    border-radius: 10px;
+    box-shadow: 1px 11px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/*Soporte*/
+
+
+
+/*Nosotros*/
+
+
+
+/*Novedades*/
+
+
+
+/*Productos*/
+
+
+
+/*Reseñas*/
+
+
+
 /* --- Estilos del Footer --- */
 
 /* El contenedor principal del footer */
