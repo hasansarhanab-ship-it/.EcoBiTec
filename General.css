@@ -27,7 +27,7 @@ header img:first-of-type {
     position: absolute;          /* la sacamos del flujo normal */
     left: 20px;                  /* pegada a la izquierda */
     height: auto;                /* mantiene proporción */
-    transition: transform 0.5s ease; /* movimiento suave */
+    transition: transform 0.8s ease; /* movimiento suave */
 }
 
 /* --- Movimiento del logo al pasar el ratón --- */
@@ -143,20 +143,19 @@ main, aside {
 /* Crea un bloque con el main y el aside uno al lado del otro */
 .contenido-principal {
     display: flex;
-    justify-content: space-between;
-    /* CAMBIO AQUÍ: 'flex-start' por 'stretch' */
-    align-items: stretch;
+    justify-content: space-between; 
+    align-items: stretch; /* CAMBIO AQUÍ: 'flex-start' por 'stretch' */
     gap: 20px;
     padding: 20px 40px;
     background-color: #f9f9f9;
 }
 
 /* ======== MAIN ======== */
-main {
-    flex: 2;
+.contenido-principal {
+    flex: 1;
     background-color: #d7f7c1;
     border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 11px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
 
@@ -181,19 +180,19 @@ main {
 }
 
 /* ======== ASIDE ======== */
-aside {
-    flex: 1;
+.beneficios {
+    flex: 2;
     background-color: #ece8a6;
     border-radius: 10px;
-    box-shadow: 1px 11px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
 
-/*Soporte*/
-
-
-
 /*Nosotros*/
+
+
+
+/*Productos*/
 
 
 
@@ -201,7 +200,7 @@ aside {
 
 
 
-/*Productos*/
+/*Soporte*/
 
 
 
