@@ -138,10 +138,12 @@ main, aside {
 }
 
 /* Crea un bloque con el main y el aside uno al lado del otro */
+/* Crea un bloque con el main y el aside uno al lado del otro */
 .contenido-principal {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    /* CAMBIO AQUÍ: 'flex-start' por 'stretch' */
+    align-items: stretch;
     gap: 20px;
     padding: 20px 40px;
     background-color: #f9f9f9;
@@ -183,9 +185,7 @@ aside {
     border-radius: 10px;
     box-shadow: 1px 11px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    height: fit-content;
 }
-
 /* --- Estilos del Footer --- */
 
 /* El contenedor principal del footer */
