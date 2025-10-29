@@ -131,6 +131,8 @@ main, aside {
     margin-top: 20px;
 }
 
+/*Inicio*/
+
 /* ======== CONTENEDOR QUE UNE MAIN + ASIDE ======== */
 .Contenedor {
     display: flex;
@@ -186,6 +188,27 @@ aside {
     box-shadow: 1px 11px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
+
+/*Soporte*/
+
+
+
+/*Nosotros*/
+
+
+
+/*Novedades*/
+
+
+
+/*Productos*/
+
+
+
+/*Reseñas*/
+
+
+
 /* --- Estilos del Footer --- */
 
 /* El contenedor principal del footer */
