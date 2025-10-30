@@ -193,9 +193,8 @@ main, aside {
 .contenedor-nosotros {
     background-color: #d7f7c1;
     display: grid;
-    grid-template-columns: 70% 20%;
+    grid-template-columns: 70% 30%;
     gap: 20px;
-
 }
 
 .nosotros {
@@ -224,9 +223,6 @@ main, aside {
     justify-content: space-between;
 }
 
-.texto {
-
-}
 
 .image-column  {
     display: grid;
@@ -253,12 +249,55 @@ main, aside {
 .aside-nosotros ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 /*Productos*/
 
+.contenedor-productos {
+    background-color: #d7f7c1;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+}
 
+.main-productos {
+    background-color: #d0f3a2;
+}
+
+.productos-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info-box1 {
+    background-color: #daf7a4;
+    display: grid;
+    grid-column: 1/2;
+}
+
+.info-box2 {
+    background-color: #daf7a4;
+    display: grid;
+    grid-column: 2/3;
+}
+
+.info-box3 {
+    background-color: #daf7a4;
+    display: grid;
+    grid-column: 2/-3;
+}
+
+.info-box4 {
+    background-color: #daf7a4;
+    display: grid;
+    grid-column: -2/-1;
+}
+.aside-productos {
+    
+}
 
 /*Novedades*/
 
