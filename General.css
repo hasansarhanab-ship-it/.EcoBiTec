@@ -242,7 +242,7 @@ main, aside {
     margin-right: auto;
 }
 
-.sidebar {
+.aside-nosotros {
     background-color: #ece8a6;
     padding: 20px;
     display: flex;
@@ -250,7 +250,7 @@ main, aside {
     justify-content: space-between;
 }
 
-.sidebar ul {
+.aside-nosotros ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between

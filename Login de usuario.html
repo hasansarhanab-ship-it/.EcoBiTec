@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Iniciar sesión | EcoBiTec</title>
+            <link rel="icon" type="png" href="../Imagenes/Logo de la empresa.png">
+            <link rel="stylesheet" href="../General.css"> <!-- si ya tienes estilos globales -->
+        <style>
+            body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            }
+            .login-contenedor {
+            background-color: white;
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            }
+            .login-contenedor img {
+            width: 80px;
+            margin-bottom: 10px;
+            }
+            .login-contenedor h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            }
+            .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            }
+            .login-form input {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+            }
+            .login-form input:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+            }
+            .login-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+            }
+            .login-btn:hover {
+            background-color: #43a047;
+            }
+            .login-contenedor p {
+            margin-top: 10px;
+            font-size: 14px;
+            }
+            .login-contenedor a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+            }
+            .login-contenedor a:hover {
+            text-decoration: underline;
+            }
+        </style>
+    </head>
+<body>
+    <div class="login-contenedor">
+    <img src="../Imagenes/Logo de la empresa.png" alt="Logo EcoBiTec">
+    <h2>Iniciar sesión</h2>
+    <form class="login-form" action="/procesar_login" method="post">
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <input type="password" name="contraseña" placeholder="Contraseña" required>
+        <button type="submit" class="login-btn">Entrar</button>
+    </form>
+    <p>¿No tienes cuenta? <a href="Registro de usuario.html">Regístrate</a></p>
+    </div>
+    </body>
+</html>
+
