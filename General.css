@@ -296,7 +296,13 @@ main, aside {
     grid-column: -2/-1;
 }
 .aside-productos {
-    
+    background-color: #ece8a6;
+}
+
+.parrafos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /*Novedades*/
